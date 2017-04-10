@@ -12,7 +12,7 @@ def count_as(file_name):
                 counter += 1
         return counter
     except FileNotFoundError:
-        return ('0')
+        return 0
 
 print(count_as("afile.txt")) # should print 28
 print(count_as("not-a-file")) # should print 0
