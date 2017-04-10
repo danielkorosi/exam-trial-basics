@@ -32,4 +32,4 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: A random number can be generated with the help of the random module. In this module, the random() function generates a float number between 0.0 and 1.0. On the other hand, if we need an integer within a certain range, the randint() function can be applied, in which the lowest and highest number of the desired range can be indicated as parameters. In addition, there are several options within the random module to generate numbers according to different distributions, such as random.uniform, random.triangular, random.gauss among others.
