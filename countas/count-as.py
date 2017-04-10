@@ -6,13 +6,13 @@ def count_as(file_name):
     file_open= open(file_name, 'r')
     text = file_open.read()
     counter = 0
-    for i in text:
-        try:
-            if i == 'a':
+    try:
+        for i in text:
+            if i == 'a' or i == 'A':
                 counter += 1
-        except FileNotFoundError:
-            counter = 0
-    return counter
+        return counter
+    except FileNotFoundError:
+        return 0
 
 print(count_as("afile.txt")) # should print 28
 print(count_as("not-a-file")) # should print 0
